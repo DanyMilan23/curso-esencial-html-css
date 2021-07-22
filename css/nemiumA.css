@@ -99,6 +99,26 @@ blockquote span {
 blockquote span::before {
   content: "-";
 }
+footer {
+  background-color: #212429;
+  color: white;
+  text-align: center;
+  padding-block: 48px;
+  z-index: 5;
+  position: relative;
+}
+footer h2 {
+  padding: 0;
+  margin: 0;
+  margin-block-end: 16px;
+  font-size: 24px;
+}
+.group-icons img {
+  margin-right: 16px;
+}
+.group-icons-black {
+  display: none;
+}
 .header-content {
   /* position: relative; */
   padding-inline: 20px;
@@ -208,8 +228,9 @@ blockquote span::before {
   margin: 0;
 }
 .form input[type="submit"] {
-  background: #127efb;
+  background: #000000;
   border: none;
+  color: #fff;
 }
 .form input::-webkit-input-placeholder {
   color: var(--white20);
@@ -274,5 +295,8 @@ blockquote span::before {
     position: relative;
     display: inherit;
     max-inline-size: 337px;
+  }
+  footer h2 {
+    font-size: 32px;
   }
 }

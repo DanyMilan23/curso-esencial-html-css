@@ -97,6 +97,26 @@ blockquote {
 blockquote p {
   color: var(--white30);
 }
+footer {
+  background-color: white;
+  color: #251f24;
+  text-align: center;
+  padding-block: 48px;
+  z-index: 5;
+  position: relative;
+}
+footer h2 {
+  padding: 0;
+  margin: 0;
+  margin-block-end: 16px;
+  font-size: 24px;
+}
+.group-icons img {
+  display: none;
+}
+.group-icons-black img {
+  margin-right: 16px;
+}
 .header-content {
   padding-inline: 20px;
 }
