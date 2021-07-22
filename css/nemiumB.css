@@ -11,10 +11,6 @@ body {
   background: #251f24;
   margin: 0;
 }
-a {
-  color: var(--white30);
-}
-
 h1 {
   font-size: 40px;
   margin-block-start: 20px;
@@ -29,21 +25,40 @@ h3 {
   font-weight: 600;
   margin-block: 16px;
 }
+
 hr {
   margin-block: 40px;
   border-color: rgba(97, 97, 97, 0.2);
 }
+a {
+  color: var(--white30);
+}
 p {
   color: var(--white20);
-}
-
-.header-content {
-  padding-inline: 20px;
 }
 header {
   margin-block-start: 20px;
   font-size: 14px;
   color: var(--white30);
+}
+header nav h4 {
+  margin-block-end: 16px;
+  line-height: 24px;
+}
+header ul {
+  list-style-type: none;
+  padding: 0;
+}
+header ul li {
+  padding-inline-start: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
+  margin: 0;
+}
+header ul li:hover {
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
 }
 header li {
   color: var(--white20);
@@ -66,7 +81,24 @@ pre {
   border-radius: 8px;
   border: 10px solid #5551ff;
   box-shadow: -10px 10px 0 0 #abaaf6;
-  /*   margin-block-end: 30px; */
+}
+blockquote {
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  background-color: var(--white10);
+  border-radius: 8px;
+  line-height: 32px;
+  font-size: 24px;
+  padding-inline-end: 24px;
+  padding-inline-start: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+}
+blockquote p {
+  color: var(--white30);
+}
+.header-content {
+  padding-inline: 20px;
 }
 .hero {
   background-image: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
@@ -86,44 +118,19 @@ pre {
 .section-content h3::before {
   content: counter(titleList) ". ";
 }
-/* .section-content h3::after {
-  display: block;
-  content: "";
-  width: 55px;
-  height: 4px;
-  background: var(--white30);
-} */
-
 .wrapper {
-  /* border: 1px solid yellow; */
   max-inline-size: 902px;
-  /* block-size: 100px; */
   margin: auto;
 }
 .main-content {
   padding-inline: 16px;
 }
-blockquote {
-  margin-block-start: 80px;
-  margin-block-end: 63px;
-  background-color: var(--white10);
-  border-radius: 8px;
-  line-height: 32px;
-  font-size: 24px;
-  padding-inline-end: 24px;
-  padding-inline-start: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
-}
-blockquote p {
-  color: var(--white30);
-}
+
 .main hr {
   display: none;
 }
 
 .slider-container {
-  /*   block-size: 100px;*/
   display: block;
   overflow: auto;
   scroll-behavior: smooth;

@@ -136,6 +136,11 @@ blockquote span::before {
 .section-content h3::before {
   content: counter(titleList) ". ";
 }
+.section-content img {
+  margin-top: 40px;
+  display: block;
+  max-inline-size: 100%;
+}
 .section-content h3::after {
   content: "";
   width: 80px;
@@ -145,4 +150,67 @@ blockquote span::before {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+.slider-container {
+  display: block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+.video {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 10px;
+}
+.slider-bullet {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background: #424242;
+  border-radius: 50%;
+}
+.form {
+  display: inline-block;
+}
+.form h3 {
+  margin: 0;
+}
+.form input {
+  max-inline-size: 280px;
+  border: 1px solid #616161;
+  background: #ffffff;
+  box-sizing: border-box;
+  color: #424242;
+  padding-inline: 16px;
+  padding-block: 12px;
+  font-size: 16px;
+  display: inline;
+  margin-block: 24px;
+  border-radius: 90px;
+}
+.form input[type="submit"] {
+  background: #000000;
+  color: white;
+  border: none;
+  position: absolute;
+  left: 228px;
+}
+.form input[type="email"] {
+  inline-size: 337px;
+  margin-inline-start: 16px;
+}
+.form input::-webkit-input-placeholder {
+  color: var(--white20);
+}
+.button-group {
+  position: relative;
+  display: inherit;
+  max-inline-size: 337px;
 }

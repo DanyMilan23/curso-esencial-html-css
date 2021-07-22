@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles-logical.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -98,6 +97,13 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
+    <link
+      href="./css/nemiumA.css"
+      id="cssArchivo"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="cambiar.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="hero"></div>
@@ -106,6 +112,24 @@
         <div class="header-content">
           <header>
             <nav>
+              <h4>VARIANTES DEL PROYECTO</h4>
+              <ul>
+                <li>
+                  <a href="#" onclick="cambiarArchivoCss('./css/nemiumA.css');"
+                    >NEMIUM A</a
+                  >
+                </li>
+                <li>
+                  <a href="#" onclick="cambiarArchivoCss('./css/nemiumB.css');"
+                    >NEMIUM B</a
+                  >
+                </li>
+                <li><ahref="#" onclick="cambiarArchivoCss('./css/styles-physical.css');"
+                    >NEMIUM C</ahref=></li>
+                <li><a>NEMIUM D</a></li>
+                <li><a>NEMIUM E</a></li>
+              </ul>
+              <h4>CONTENIDO</h4>
               <details open>
                 <summary>Setup</summary>
                 <ol>
@@ -381,9 +405,12 @@
           </p>
           <div class="section-content">
             <form action="#" class="form">
+              <h3>Suscríbete a nuestro newsletter</h3>
               <input type="text" required placeholder="Nombre" />
-              <input type="email" required placeholder="Correo Electronico" />
-              <input type="submit" value="Suscribirme" />
+              <div class="button-group">
+                <input type="email" required placeholder="Correo Electronico" />
+                <input type="submit" value="Suscribirme" />
+              </div>
             </form>
           </div>
         </div>
