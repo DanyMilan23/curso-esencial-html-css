@@ -36,6 +36,9 @@ a {
 p {
   color: var(--white20);
 }
+main header {
+  display: none;
+}
 header {
   margin-block-start: 20px;
   font-size: 14px;

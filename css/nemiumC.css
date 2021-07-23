@@ -40,9 +40,6 @@ a {
 p {
   font-size: 16px;
 }
-main header {
-  display: none;
-}
 header {
   font-size: 14px;
   color: var(--gray10);
@@ -82,7 +79,7 @@ nav details summary {
   font-weight: bold;
 }
 pre {
-  background: #fec62e;
+  background: #e5e5e5;
   padding: 40px;
   overflow: auto;
   font-family: "Roboto";
@@ -116,6 +113,10 @@ footer h2 {
   margin-block-end: 16px;
   font-size: 24px;
 }
+.navbar {
+  border-left: 4px solid #c4c4c4;
+  padding-left: 16px;
+}
 .group-icons img {
   margin-right: 16px;
 }
@@ -127,10 +128,7 @@ footer h2 {
   padding-inline: 20px;
 }
 .hero {
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent),
-    url(../images/patron-1.png);
-  height: 50px;
-  font-size: 0;
+  display: none;
 }
 .section-content img {
   margin-top: 40px;
@@ -156,10 +154,9 @@ footer h2 {
   background: white;
   padding-inline: 16px;
 }
-/* .header {
-  position: sticky;
-  top: 0;
-} */
+.header {
+  display: none;
+}
 .section-content:first-of-type {
   margin-top: 0;
 }
@@ -252,12 +249,12 @@ footer h2 {
     inset-block-start: 65px;
     padding-inline: 0;
   }
-  header {
+  /*  header {
     position: absolute;
     inset-block-start: 0;
     inset-inline-start: -208px;
     inline-size: 188px;
-  }
+  } */
   h1 {
     font-size: 60px;
     margin-block-start: 64px;
